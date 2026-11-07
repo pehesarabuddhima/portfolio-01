@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ===================== META & SEO ===================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Pehesara Rathnaweera — Aspiring Software Developer passionate about creativity, technology and modern web development." />
+  <meta name="author" content="Pehesara Rathnaweera" />
+  <meta name="theme-color" content="#05060f" />
+  <title>Pehesara Rathnaweera — Aspiring Software Developer</title>
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23a855f7'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='%230a0a1a'/%3E%3Ctext x='50' y='68' font-size='48' font-family='Arial' font-weight='bold' fill='url(%23g)' text-anchor='middle'%3EPR%3C/text%3E%3C/svg%3E" />
+
+  <!-- Google Fonts: Poppins for headings, Inter for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== ANIMATED BACKGROUND ===================== -->
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="bg-glow glow-1" aria-hidden="true"></div>
+  <div class="bg-glow glow-2" aria-hidden="true"></div>
+  <div class="bg-glow glow-3" aria-hidden="true"></div>
+
+  <!-- ===================== NAVIGATION BAR ===================== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav container">
+      <!-- Logo -->
+      <a href="#home" class="logo" aria-label="Pehesara Rathnaweera home">
+        PR<span class="logo-dot">.</span>
+      </a>
+
+      <!-- Desktop menu -->
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home"    class="nav-link active">Home</a></li>
+        <li><a href="#about"   class="nav-link">About</a></li>
+        <li><a href="#skills"  class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger button (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="hero-hello">👋 Welcome to my portfolio</p>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Pehesara&nbsp;Rathnaweera.</span>
+          </h1>
+          <h2 class="hero-subtitle">Aspiring <span class="typed" id="typed"></span><span class="cursor">|</span></h2>
+          <p class="hero-text">
+            I'm passionate about creativity, technology and web development. I love
+            turning ideas into clean, modern and interactive digital experiences —
+            one line of code at a time.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Explore My Work <span>→</span></a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+          <!-- Social shortcuts -->
+          <div class="hero-socials">
+            <a href="https://github.com"   target="_blank" rel="noopener" aria-label="GitHub"   class="social-icon">🐙</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">💼</a>
+            <a href="mailto:pehesara@example.com" aria-label="Email" class="social-icon">✉️</a>
+          </div>
+        </div>
+
+        <!-- Profile image placeholder with floating card effect -->
+        <div class="hero-visual reveal delay-2">
+          <div class="profile-card">
+            <div class="profile-ring"></div>
+            <div class="profile-inner">
+              <span class="profile-initials">PR</span>
+              <p class="profile-caption">Pehesara Rathnaweera</p>
+              <!-- Decorative code badge -->
+              <span class="code-badge">&lt;/&gt;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll-down indicator -->
+      <a href="#about" class="scroll-down" aria-label="Scroll down">
+        <span class="mouse"><span class="wheel"></span></span>
+      </a>
+    </section>
+
+    <!-- ===================== ABOUT ME ===================== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">01 · Who I Am</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: text -->
+          <div class="about-text reveal">
+            <h3>A curious mind, building for the web 🚀</h3>
+            <p>
+              Hello! I'm Pehesara Rathnaweera — an aspiring software developer with a deep
+              interest in software engineering, programming and modern technology.
+              I enjoy exploring how things work under the hood and crafting elegant
+              solutions to real problems.
+            </p>
+            <p>
+              Currently, I'm sharpening my skills in front-end development, UI/UX design
+              and responsive web design. My goal is to grow into a well-rounded engineer
+              who builds products that are fast, beautiful and genuinely useful.
+            </p>
+            <a href="#contact" class="btn btn-primary">Let's Connect <span>→</span></a>
+          </div>
+
+          <!-- Right: info cards -->
+          <div class="about-cards">
+            <div class="info-card reveal delay-1">
+              <span class="info-icon">💡</span>
+              <h4>Creative Thinker</h4>
+              <p>I love finding creative, out-of-the-box solutions and designing experiences users enjoy.</p>
+            </div>
+            <div class="info-card reveal delay-2">
+              <span class="info-icon">💻</span>
+              <h4>Code Enthusiast</h4>
+              <p>From clean markup to dynamic JavaScript — I enjoy writing and improving code every day.</p>
+            </div>
+            <div class="info-card reveal delay-3">
+              <span class="info-icon">🎨</span>
+              <h4>UI/UX Explorer</h4>
+              <p>Interested in beautiful interfaces, smooth animations and human-centered design.</p>
+            </div>
+            <div class="info-card reveal delay-4">
+              <span class="info-icon">📚</span>
+              <h4>Lifelong Learner</h4>
+              <p>Always curious. Always learning. New tools, frameworks and best practices.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">02 · What I Do</span>
+          <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Each card: icon, name, animated progress bar -->
+          <div class="skill-card reveal delay-1">
+            <div class="skill-icon html">📄</div>
+            <h3>HTML</h3>
+            <p>Semantic, accessible & SEO-friendly markup.</p>
+            <div class="progress"><div class="progress-bar" data-width="92"><span>92%</span></div></div>
+          </div>
+
+          <div class="skill-card reveal delay-2">
+            <div class="skill-icon css">🎨</div>
+            <h3>CSS</h3>
+            <p>Layouts, animations, gradients & modern styling.</p>
+            <div class="progress"><div class="progress-bar" data-width="88"><span>88%</span></div></div>
+          </div>
+
+          <div class="skill-card reveal delay-3">
+            <div class="skill-icon js">⚡</div>
+            <h3>JavaScript</h3>
+            <p>Interactive logic, DOM magic & dynamic pages.</p>
+            <div class="progress"><div class="progress-bar" data-width="80"><span>80%</span></div></div>
+          </div>
+
+          <div class="skill-card reveal delay-1">
+            <div class="skill-icon rwd">📱</div>
+            <h3>Responsive Design</h3>
+            <p>Flawless experiences on every screen size.</p>
+            <div class="progress"><div class="progress-bar" data-width="90"><span>90%</span></div></div>
+          </div>
+
+          <div class="skill-card reveal delay-2">
+            <div class="skill-icon uiux">✨</div>
+            <h3>UI/UX Design</h3>
+            <p>Clean, intuitive and delightful interfaces.</p>
+            <div class="progress"><div class="progress-bar" data-width="75"><span>75%</span></div></div>
+          </div>
+
+          <div class="skill-card reveal delay-3">
+            <div class="skill-icon prog">🧠</div>
+            <h3>Programming</h3>
+            <p>Problem solving & core programming concepts.</p>
+            <div class="progress"><div class="progress-bar" data-width="78"><span>78%</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">03 · My Work</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card reveal delay-1">
+            <div class="project-img">
+              <span class="project-emoji">🛒</span>
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-body">
+              <h3>Online Shopping Web App</h3>
+              <p>A responsive e-commerce front-end with product grid, cart interactions and a sleek dark UI built with pure HTML, CSS and JavaScript.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener" class="btn-sm btn-outline-sm">🐙 GitHub</a>
+                <a href="#" class="btn-sm btn-primary-sm">🚀 Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal delay-2">
+            <div class="project-img">
+              <span class="project-emoji">🌤️</span>
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-body">
+              <h3>Weather Dashboard</h3>
+              <p>A clean weather dashboard with live data fetching, dynamic icons, glassmorphism cards and animated weather visuals.</p>
+              <div class="project-tags">
+                <span>JavaScript</span><span>API</span><span>CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener" class="btn-sm btn-outline-sm">🐙 GitHub</a>
+                <a href="#" class="btn-sm btn-primary-sm">🚀 Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal delay-3">
+            <div class="project-img">
+              <span class="project-emoji">📝</span>
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-body">
+              <h3>Task Management App</h3>
+              <p>A minimalist to-do and productivity app with drag-friendly lists, local storage persistence and smooth micro-interactions.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>JavaScript</span><span>UI/UX</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener" class="btn-sm btn-outline-sm">🐙 GitHub</a>
+                <a href="#" class="btn-sm btn-primary-sm">🚀 Live Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section class="education section" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">04 · My Journey</span>
+          <h2 class="section-title">Education & <span class="gradient-text">Achievements</span></h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-line"><span class="timeline-progress"></span></div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2023 — Present</span>
+              <h3>Software Engineering Studies</h3>
+              <h4>Focus: Web Development & Computer Science</h4>
+              <p>Building strong foundations in programming, software engineering principles and modern web technologies through hands-on projects.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2023 — 2024</span>
+              <h3>Web Development Fundamentals</h3>
+              <h4>Self-Directed Learning</h4>
+              <p>Mastered HTML, CSS and JavaScript by building real projects — from landing pages to interactive web applications.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">Achievements</span>
+              <h3>Certifications & Milestones</h3>
+              <h4>Continuous Growth</h4>
+              <p>Earned certificates in web development and UI/UX fundamentals, and actively participates in coding challenges and community projects.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">05 · Get In Touch</span>
+          <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact info -->
+          <div class="contact-info reveal">
+            <h3>Let's build something great together 💬</h3>
+            <p>Have a project in mind, a question, or just want to say hi? My inbox is always open — I'll do my best to get back to you quickly.</p>
+
+            <ul class="contact-list">
+              <li><span class="contact-icon">📧</span><div><strong>Email</strong><p>pehesara@example.com</p></div></li>
+              <li><span class="contact-icon">📍</span><div><strong>Location</strong><p>Sri Lanka</p></div></li>
+            </ul>
+
+            <div class="contact-socials">
+              <a href="https://github.com"   target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+            </div>
+          </div>
+
+          <!-- Contact form -->
+          <form class="contact-form reveal delay-2" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" id="name" name="name" placeholder=" " required />
+                <label for="name">Your Name</label>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" placeholder=" " required />
+                <label for="email">Your Email</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" placeholder=" " required />
+              <label for="subject">Subject</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Send Message <span>➤</span>
+            </button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">PR<span class="logo-dot">.</span></a>
+
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="footer-socials">
+        <a href="https://github.com"   target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Pehesara Rathnaweera. All rights reserved. Crafted with 💜 & ☕.</p>
+    </div>
+  </footer>
+
+  <!-- Back-to-top button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
